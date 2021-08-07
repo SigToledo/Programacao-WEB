@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css" media="screen">
+    <title>Aula 01 - Formulário</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Formulário de cadastro</h1>
+        <p id="subtitulo">Preencher com a suas informações</p>
+        <br>
+    </div>
+    
+
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="usuario"><strong>Usuário</strong></label>
+                <input type="text" name="usuario" id="user" placeholder="Usuário" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha"><strong>Senha:</strong></label>
+                <input type="text" name="password" id="pass" placeholder="Senha" required>
+            </div>
+
+        </fieldset>
+        <br>
+        <div>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <br>
+        <div>
+            <label><strong>Estado Civil:</strong></label>
+            <label>
+                <input type="radio" name="Estado Civil" value="Casado">Casado
+            </label>
+            <label>
+                <input type="radio" name="Estado Civil" value="Solteiro">Solteiro
+            </label>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Área de interesse:</strong></label>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Computação" /> Computação
+                <label for="tecnologia1">Computação</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Biologia" /> Biologia
+                <label for="tecnologia2">Biologia</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Meio Ambiente" /> Meio Ambiente
+                <label for="tecnologia3">Meio Ambiente</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="História" /> História
+                <label for="tecnologia4">História</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Artes" /> Artes
+                <label for="tecnologia5">Artes</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Música"> Música
+                <label for="tecnologia6">Música</label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label><strong>Endereço:</strong></label>
+            <input type="text" name="endereço" id="endereço" placeholder="Endereço">
+        </div>
+        <br>
+        <div>
+            <label><strong>Número:</strong></label>
+            <input type="number" name="numero" id="numero" placeholder="Número">
+        </div>
+        <br>
+        <div>
+            <label><strong>Complemento:</strong></label>
+            <input type="text" name="Complemento" id="complemento" placeholder="Complemento">
+        </div>
+        <br>
+        <div>
+            <label for="UF"><strong>UF:</strong></label>
+            <select id="UF">
+                <option selected disabled value="">Selecione</option>
+                <option>Acre (AC)</option>
+                <option>Alagoas (AL)</option>
+                <option>Amapá (AP)</option>
+                <option>Amazonas (AM)</option>
+                <option>Bahia (BA)</option>
+                <option>Ceará (CE)</option>
+                <option>Distrito Federal (DF)</option>
+                <option>Espírito Santo (ES)</option>
+                <option>Goiás (GO)</option>
+                <option>Maranhão (MA)</option>
+                <option>Mato Grosso (MT)</option>
+                <option>Mato Grosso do Sul (MS)</option>
+                <option>Minas Gerais (MG)</option>
+                <option>Pará (PA)</option>
+                <option>Paraíba (PB)</option>
+                <option>Paraná (PR)</option>
+                <option>Pernambuco (PE)</option>
+                <option>Piauí (PI)</option>
+                <option>Rio de Janeiro (RJ)</option>
+                <option>Rio Grande do Norte (RN)</option>
+                <option>Rio Grande do Sul (RS)</option>
+                <option>Rondônia (RO)</option>
+                <option>Roraima (RR)</option>
+                <option>Santa Catarina (SC)</option>
+                <option>São Paulo (SP)</option>
+                <option>Sergipe (SE)</option>
+                <option>Tocantins (TO)</option>
+            </select>
+
+            <div>
+                <br>
+                <label>Complemento:</label>
+                <textarea row="6" style="width: 26em" id="complemento" name="complemento"></textarea>
+            </div>
+
+            <button class="botao" type="Salvar">Salvar</button>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
